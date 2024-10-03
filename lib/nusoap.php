@@ -951,7 +951,7 @@ function iso8601_to_timestamp($datestr){
 	'([0-9]{2})(\.[0-9]+)?'. // seconds ss.ss...
 	'(Z|[+\-][0-9]{2}:?[0-9]{2})?'. // Z to indicate UTC, -/+HH:MM:SS.SS... for local tz's
 	'/';
-	if(preg_match($pattern,$datestr,$regs)){
+	if(preg_match($patternw,$datestr,$regs)){
 		// not utc
 		if($regs[8] != 'Z'){
 			$op = substr($regs[8],0,1);
@@ -2605,7 +2605,7 @@ class soap_transport_http extends nusoap_base {
 	* @access   public
 	* @deprecated
 	*/
-	function sendHTTPS($data, $timeout=0, $response_timeout=30, $cookies) {
+	function sendHTTPS($data, $cookies, $timeout=0, $response_timeout=30) {
 		return $this->send($data, $timeout, $response_timeout, $cookies);
 	}
 	
@@ -7570,6 +7570,10 @@ class nusoap_client extends nusoap_base  {
 	*/
 	function send($msg, $soapaction = '', $timeout=0, $response_timeout=30) {
 		$this->checkCookies();
+		if (empty($this->endpoint)) {
+        $this->setError('Endpoint is not set!');
+        return false;
+    }
 		// detect transport
 		switch(true){
 			// http(s)
