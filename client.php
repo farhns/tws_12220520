@@ -19,6 +19,7 @@ if($client->fault){
   } else {
     echo "<p>Hasil Penjumlahan".$bil1." dan ".$bil2/" adlah" .$result."</p>";
     echo "<p>Hasil pengurangan".$bil1." dan ".$bil2/" adlah" .$resultes."</p>";
+    echo "<p>Hasil pengurangan".$bil1." dan ".$bil2/" adlah" .$resultes."</p>";
   }
 }
 
