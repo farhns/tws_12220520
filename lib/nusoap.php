@@ -951,7 +951,7 @@ function iso8601_to_timestamp($datestr){
 	'([0-9]{2})(\.[0-9]+)?'. // seconds ss.ss...
 	'(Z|[+\-][0-9]{2}:?[0-9]{2})?'. // Z to indicate UTC, -/+HH:MM:SS.SS... for local tz's
 	'/';
-	if(preg_match($patternw,$datestr,$regs)){
+	if(preg_match($pattern,$datestr,$regs)){
 		// not utc
 		if($regs[8] != 'Z'){
 			$op = substr($regs[8],0,1);
@@ -7583,7 +7583,7 @@ class nusoap_client extends nusoap_base  {
 					$http =& $this->persistentConnection;
 				} else {
 					$http = new soap_transport_http($this->endpoint, $this->curl_options, $this->use_curl);
-					if ($this->persistentConnection) {
+					if ($this->persistentConnecton) {
 						$http->usePersistentConnection();
 					}
 				}
