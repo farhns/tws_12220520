@@ -1,8 +1,10 @@
 <!-- Case study Operator Matematika Plus dan Minus dengan function-->
 <!-- Mata Kuliah Teknologi Web Service -->
-<!-- Tim: -->
-<!-- Kelas :-->
-<!-- Kampus Kramat 98-->
+<!-- Nama : Farhan Sofwan Muchlisin  -->
+<!-- NIM : 12220520 -->
+<!-- Tim :  -->
+<!-- Kelas : 12.5B.13 -->
+<!-- Kampus UBSI Bogor B Kampus Kota Bogor-->
 
 <?php
 //Bagian Function
@@ -36,5 +38,4 @@ echo "<p>Hasil penjumlahan ".$bilangan1." dan ".$bilangan2." adalah ".$hasilplus
 echo "<p>Hasil pengurangan ".$bilangan1." dan ".$bilangan2." adalah ".$hasilminus."</p>";
 echo "<br />";
 ?>
-perbaikan dilakukan dengan mengubah variabel $bil1 menjadi $bilangan1
-dan $bil2 menjadi $bilangan2
+12220520 | Farhan S.M | 12.5B.13 

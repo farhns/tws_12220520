@@ -1,8 +1,11 @@
 <!-- Case study Operator Matematika Plus dan Minus -->
 <!-- Mata Kuliah Teknologi Web Service -->
-<!-- Tim: -->
-<!-- Kelas:-->
-<!-- Kampus UBSI Bogor B Kota Bogor -->
+<!-- Nama : Farhan Sofwan Muchlisin  -->
+<!-- NIM : 12220520 -->
+<!-- Tim :  -->
+<!-- Kelas : 12.5B.13 -->
+<!-- Kampus UBSI Bogor B Kampus Kota Bogor-->
+
 
 <?php
 
