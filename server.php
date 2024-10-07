@@ -10,12 +10,10 @@ $server -> configureWSDL('server_wsdl','urn:server_wsdl'); // Initialize WSDL su
 $server->register('jumlahkan', // method name
     array('x' => 'xsd:string','y' => 'xsd:string'), // input parameters
     array('return' => 'xsd:string') // output parameters
-
 );
 $server->register('kurang', // method name
     array('a' => 'xsd:string', 'b' => 'xsd:string'), // input parameters
     array('return' => 'xsd:string') // output parameters
-
 );
 
 // detil isi method jumlahkan, fungsi yg d jalankan ktika webservice d panggil
