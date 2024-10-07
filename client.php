@@ -7,7 +7,7 @@ $client=new nusoap_client('http://localhost/XML/server.php?wsdl', 'wsdl', true);
 
 // dua bilangan yang akan dijumlahkan atau dikurangi
     $bil1 = 10;
-    $bil2 = 10;
+    $bil2 = 25;
 
 // proses call method 'jumlahkan' di script server.php yang ada di komputer B
 $result = $client->call('jumlahkan', array('x' => $bil1, 'y' => $bil2));
